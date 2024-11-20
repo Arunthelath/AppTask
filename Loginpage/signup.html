@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Form with Tabs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+  <section id="mainpage">
+    <div class="imagediv" >
+        <img src="Asstes/images/bg.jpg" >  
+        
+    <h1>fgbhbn </h1>    
+    </div>
+    <div class="contentdiv">
+      <div class="form-container">
+        <form id="signupForm">
+          <!-- Tab 1: Personal Details -->
+          <div class="tab-content active">
+            <h3>Personal Details</h3>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+    
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <small id="emailHelp">Please enter a valid email address (e.g., user@example.com).</small>
+    
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            <small id="phoneHelp">Please enter a valid phone number (e.g., +1234567890 or 123-456-7890).</small>
+    
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+          </div>
+    
+          <!-- Tab 2: Account Details -->
+          <div class="tab-content">
+            <h3>Account Details</h3>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+    
+            <label for="profilePicture">Profile Picture (Optional):</label>
+            <input type="file" id="profilePicture" name="profilePicture" accept="image/*">
+    
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter a strong password" required>
+            <small id="passwordHelp">Password must be at least 6 characters, include an uppercase letter, a lowercase letter, a number, and a special character.</small>
+    
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Re-enter your password" required>
+          </div>
+    
+          <!-- Tab 3: Agreements and Permissions -->
+          <div class="tab-content">
+            <h3>Agreements and Permissions</h3>
+            <label>
+              <input type="checkbox" id="termsCheckbox" name="terms" required>
+              I agree to the <a href="terms.html" target="_blank">Terms & Conditions</a>.
+            </label>
+    
+            <label>
+              <input type="checkbox" id="privacyCheckbox" name="privacy" required>
+              I agree to the <a href="privacy.html" target="_blank">Privacy Policy</a>.
+            </label>
+          </div>
+    
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
+
+
+    </div>
+    
+
+</section>
+
+
+
+
+    
+  <script src="index.js"></script>
+</body>
+</html>
